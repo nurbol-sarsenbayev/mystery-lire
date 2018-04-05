@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("AvenirNextCyr", "../fonts/AvenirNextCyr/Regular/AvenirNextCyr-Regular", normal);
+@include font-face("AvenirNextCyr", "../fonts/AvenirNextCyr/Medium/AvenirNextCyr-Medium", 500);
+@include font-face("AvenirNextCyr", "../fonts/AvenirNextCyr/Bold/AvenirNextCyr-Bold", bold);
+
+@include font-face("ArabellaSwash", "../fonts/ArabellaSwash/Medium/ArabellaSwash-Medium", 500);

@@ -1,0 +1,230 @@
+@import './vars';
+
+@mixin circle($width) {
+	width: $width;
+	height: $width;
+	line-height: $width;	
+	text-align: center;
+	border-radius: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $text_color;
+    outline: none;
+    // font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    .inverse & {
+        color: #fff;
+    }
+}
+
+input, button, textarea, a {
+    outline: none;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+.inverse {
+    color: #fff;
+}
+
+.accent {
+    color: $accent;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-left: 20px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+	padding: 5px 20px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff !important;
+    border: 0;
+    border-radius: 10px;
+    background-color: $accent;
+    min-width: 165px;    
+    cursor: pointer;
+
+    &:hover {
+        color: $text_color !important;
+    }    
+}
+
+.input, .textarea {
+    background: #fff;
+    color: $text_color;
+    font-size: 12px;
+    border: 1px solid $accent;
+    border-radius: 10px;
+    font-family: $default_family, sans-serif;
+    padding: 5px 20px;
+    // min-width: 260px;
+
+    .inverse & {
+        color: #fff;
+        border-color: #fff;
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+        &::-moz-input-placeholder {
+            color: #fff;
+        }
+        &::-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+
+    &-div {
+        position: relative;
+        
+        & .input {
+          width: 100%;  
+        }
+
+        & .error-message {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+        }
+
+        .inverse & {
+            border-bottom-color: #fff;
+        }
+    }
+
+    &.error {
+		border-color: red;
+		color: red;
+
+		&+.error-message {
+			display: block;
+		}
+	}
+
+	&+.error-message {
+        display: none;
+        text-align: left;
+        color: red;
+        margin-top: 3px;
+        padding-left: 20px;
+	}
+
+	&::-webkit-input-placeholder {
+        color: $accent_light;
+		opacity: 1;
+	}
+	
+	&::-moz-placeholder {
+        color: $accent_light;
+		opacity: 1;
+	}
+	
+	&:-ms-input-placeholder {
+        color: $accent_light;
+		opacity: 1;
+	}
+	
+	&.error::-webkit-input-placeholder {
+		color: red;
+	}
+	
+	&.error::-moz-placeholder {
+		color: red;
+	}
+	
+	&.error:-ms-input-placeholder {
+		color: red;
+	}
+}
+
+.text {
+    &-phone {
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}
+
+.form {
+    max-width: 350px;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: rgba($accent_light, 0.85);
+
+    &-title {
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0 0 35px;
+    }
+
+    form {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .input-div {
+        margin-bottom: 10px;
+
+        .error-message {
+            position: static;
+        }
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    &-info {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    &-info2 {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
