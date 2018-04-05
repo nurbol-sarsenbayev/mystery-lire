@@ -19,7 +19,6 @@ img {
 a {
     color: $text_color;
     outline: none;
-    // font-size: 14px;
     font-weight: 500;
     text-decoration: none;
 
@@ -97,7 +96,6 @@ p {
     border-radius: 10px;
     font-family: $default_family, sans-serif;
     padding: 5px 20px;
-    // min-width: 260px;
 
     .inverse & {
         color: #fff;
@@ -145,6 +143,7 @@ p {
         display: none;
         text-align: left;
         color: red;
+        font-weight: normal;
         margin-top: 3px;
         padding-left: 20px;
 	}

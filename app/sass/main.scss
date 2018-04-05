@@ -255,21 +255,102 @@ body {
             }
         }
     }
+
+    &-thanks {
+        padding: 140px 0 0;
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+
+        .container {
+            display: flex;
+        }
+
+        &-title {
+            font-size: 60px;
+            font-weight: 500;
+            font-family: ArabellaSwash;
+            color: $accent_light;
+            margin-bottom: 30px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        &-link {
+            display: inline-block;
+            font-weight: normal;
+            color: $accent_light;
+            line-height: 1.5;
+            border-bottom: 1px solid $accent_light;
+        }
+
+        &-content {
+            width: 100%;
+            min-height: 337px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right bottom;
+            background-image: url('../img/thanks-back.jpg');
+            display: flex;
+            align-items: center;
+        }
+
+        &-block {
+            margin-top: -100px;
+        }
+    }
 }
 
-   .section-thanks {
-      &-content {
-         max-width: 450px;
-         padding: 10px 20px;
-         margin: 40px auto 0;
-         text-align: center;
-         background-color: #fff;
+.more {
+    max-width: 940px;
+    padding-right: 60px;
+    background-image: url('../img/more-back.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
 
-         .button {
-            margin-top: 30px;
-         }
-      }
+    &-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0 0 15px;
     }
+
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &-left {
+        font-weight: 500;
+    }
+
+    &-right {
+        flex-shrink: 0;
+        margin-left: 20px;
+
+        img {
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            &:before {
+                content: "-";
+                margin-right: 5px;
+            }
+        }
+    }
+}
 
 
 @import './_media';

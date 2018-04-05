@@ -155,27 +155,235 @@
 		
 	</div>
 	
-	<div class="remodal form remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: false">
+	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
+		<div class="form">
 			<h5 class="form-title">Закажите обратный звонок <br>
-					и наш менеджер перезвонит Вам</h5>
+				и наш менеджер перезвонит Вам</h5>
 			<form action="">
-			  <input type="hidden" name="info" value="Оставить заявку">
+				<input type="hidden" name="info" value="Оставить заявку">
 				<div class="input-div">
-				  <input type="text" class="input" name="Ваше имя" placeholder="Ваше имя">
+					<input type="text" class="input" name="Ваше имя" placeholder="Ваше имя">
 				</div>
 				<div class="input-div">
-				  <input type="tel" class="input" name="Номер телефона" placeholder="Номер телефона*" required>
-				  <span class="error-message">Заполните это поле</span>
+					<input type="email" class="input" name="email" placeholder="E-mail*" required>
+					<span class="error-message">Заполните это поле</span>
+				</div>
+				<div class="input-div">
+					<input type="tel" class="input" name="Номер телефона" placeholder="Номер телефона*" required>
+					<span class="error-message">Заполните это поле</span>
 				</div>
 				<button class="button ajax-submit" type="submit" id="modal_ostavit_zaiavku">Оставить заявку</button>
 			</form>
 
 			<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
+		</div>
+	</div>
 
-	  </div>
-										
+	<div class="remodal more" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<h3 class="more-title">Антицеллюлитный массаж тела</h3>
+
+		<div class="more-content">
+			<div class="more-left">
+				<p>
+					<b>Показания:</b> наличие целлюлита 1-4 стадии, профилактика возникновения целлюлита.
+				</p>					
+				<p>
+					Лечит целлюлит, корректирует вес, подтягивает силуэт. Видимых результатов достигают уже через 5 процедур. <br>
+					Эффект достигается за счет вакуумных насадок, под воздействием которых разрушаются жировые отложения.
+				</p>					
+				<p>
+					<b>Продолжительность 1 процедуры</b> - 50 минут <br>
+					<b>Курс антицеллюлитного массажа</b> - 10-15 процедур  
+				</p>						
+				<b>Противопоказания:</b>
+				<ul class="more-list">
+					<li>онкология</li>
+					<li>сердечно-сосудистые заболевания</li>
+					<li>инфаркт</li>
+					<li>варикоз</li>
+					<li>камни в желчном и мочевом пузыре</li>
+					<li>кожные инфекции</li>
+					<li>перенесенные травмы позвоночника</li>
+				</ul>
+			</div>
+			<div class="more-right">
+				<img src="./img/more-1.jpg" alt="">
+
+				<div class="form">
+					<form action="/mail.php">
+						<input type="hidden" name="info" value="Записаться на 'Антицеллюлитный массаж тела'">
+						<div class="input-div">
+							<input type="text" class="input" name="Имя" placeholder="Имя">
+						</div>
+						<div class="input-div">
+							<input type="email" class="input" name="email" placeholder="E-mail*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<div class="input-div">
+							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+					</form>
+		
+					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+			
+	<div class="remodal more" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<h3 class="more-title">Лимфодренажный массаж тела</h3>
+
+		<div class="more-content">
+			<div class="more-left">
+				<p>
+					<b>Показания:</b> наличие лишнего веса, сидячий образ жизни, физический и моральный стресс, стремление к достижению идеала фигуры.
+				</p>					
+				<p>
+					Способствует похудению за счет сокращения жировых отложений, подтягивает и повышает эластичность кожи, расслабляет и снижает уровень стресса, уменьшает объем живота.
+				</p>					
+				<p>
+					<b>Продолжительность 1 процедуры</b> - 70 минут <br>
+					<b>Курс лимфодренажного массажа </b> - 10-15 процедур  
+				</p>						
+				<b>Противопоказания:</b>
+				<ul class="more-list">
+					<li>онкология</li>
+					<li>сердечно-сосудистые заболевания</li>
+					<li>инфаркт</li>
+					<li>варикоз</li>
+					<li>камни в желчном и мочевом пузыре</li>
+					<li>кожные инфекции</li>
+					<li>перенесенные травмы позвоночника</li>
+				</ul>
+			</div>
+			<div class="more-right">
+				<img src="./img/more-2.jpg" alt="">
+
+				<div class="form">
+					<form action="/mail.php">
+						<input type="hidden" name="info" value="Записаться на 'Лимфодренажный массаж тела'">
+						<div class="input-div">
+							<input type="text" class="input" name="Имя" placeholder="Имя">
+						</div>
+						<div class="input-div">
+							<input type="email" class="input" name="email" placeholder="E-mail*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<div class="input-div">
+							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+					</form>
+		
+					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="remodal more" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<h3 class="more-title">Лифтинговый массаж лица</h3>
+
+		<div class="more-content">
+			<div class="more-left">
+				<p>
+					<b>Показания:</b> сухость и увядание кожи, морщины, жирная кожа, отеки и патозность кожи, пигментация, двойной подбородок.
+				</p>					
+				<p>
+					Эффективно разглаживает морщины за счет специальных вакуумных насадок для лица, улучшает тонус кожи, сокращает количество жировых отложений.
+				</p>					
+				<p>
+					<b>Продолжительность 1 процедуры</b> - 30 минут <br>
+					<b>Курс лифтингового массажа лица</b> - 5 процедур  
+				</p>						
+				<b>Противопоказания:</b>
+				<ul class="more-list">
+					<li>открытые раны</li>
+					<li>акне</li>
+					<li>купероз</li>
+					<li>кожные инфекции</li>
+				</ul>
+			</div>
+			<div class="more-right">
+				<img src="./img/more-3.jpg" alt="">
+
+				<div class="form">
+					<form action="/mail.php">
+						<input type="hidden" name="info" value="Записаться на 'Лифтинговый массаж лица'">
+						<div class="input-div">
+							<input type="text" class="input" name="Имя" placeholder="Имя">
+						</div>
+						<div class="input-div">
+							<input type="email" class="input" name="email" placeholder="E-mail*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<div class="input-div">
+							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+					</form>
+		
+					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="remodal more" data-remodal-id="more-modal-4" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<h3 class="more-title">Атицеллюлитное обертывание тела</h3>
+
+		<div class="more-content">
+			<div class="more-left">
+				<p>Обертывание тела со специальной маской.</p>
+				<p>Оказывает антицеллюлитное и моделирующее воздействие.</p>	
+				<p>Укрепляет и тонизирует ткани.</p>	
+				<p>Результат - подтянутая фигура.</p>	
+				<p>Рекомендуется применять после вакуумного массажа тела.</p>
+				<p>
+					<b>Продолжительность 1 сеанса:</b> 30-45 минут <br>
+					<b>Курс антицеллюлитного обертывания тела:</b> 10-15 процедур  
+				</p>
+			</div>
+			<div class="more-right">
+				<img src="./img/more-4.jpg" alt="">
+
+				<div class="form">
+					<form action="/mail.php">
+						<input type="hidden" name="info" value="Записаться на 'Атицеллюлитное обертывание тела'">
+						<div class="input-div">
+							<input type="text" class="input" name="Имя" placeholder="Имя">
+						</div>
+						<div class="input-div">
+							<input type="email" class="input" name="email" placeholder="E-mail*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<div class="input-div">
+							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
+							<span class="error-message">Заполните это поле</span>
+						</div>
+						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+					</form>
+		
+					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
 	<link rel="stylesheet" href="./css/libs.min.css">
 	<link rel="stylesheet" href="./css/main.min.css">
 	<script src="./js/libs.min.js"></script>

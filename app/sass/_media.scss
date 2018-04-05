@@ -97,10 +97,6 @@
             &-content {
                 background-position: calc(100% + 430px) top;
             }
-
-            &-list {
-                // background-color: rgba(#fff, 0.5);
-            }
         }
     }
 }
@@ -108,23 +104,11 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
-    .logo {
-        max-width: 200px;
-    }
-
     .header {
-        &.scrolled {
-            padding: 10px 0;
-
-            .main-menu {
-                top: 94px;
-            }        
+        &-left {
+            display: none;
         }
-    }
-
-    .main-menu {
-        top: 126px;
-    }
+    }    
     
     .section {
         &-title {
@@ -133,32 +117,36 @@
 
         &-main {
             padding-top: 160px;
+
             &-title {
                 line-height: 1;
             }
 
-            &-footer {
-                display: block;
-
-                & > div {
-                    background: transparent;
-
-                    &:before {
-                        right: -1000px;
-                        left: -1000px;
-                        z-index: -1;
-                    }
-                }
+            &-content {
+                flex-direction: column;
+                align-items: center;
+                background-image: none;
             }
-
-            &-left {
+        }    
+        
+        &-thanks {
+            flex-grow: 0;
+            .container {
                 width: 100%;
-                padding: 20px 0;
-
             }
+        }
+    }
 
+    .more {
+        padding-right: 30px;
+        &-content {
+            flex-direction: column;
+            align-items: center;
+        }
 
-        }        
+        &-right {
+            margin: 20px 0 0 0;
+        }
     }
 
 }
@@ -168,10 +156,8 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
     .form {
-
-        .input-div, .button {
+        form {
             width: 100%;
-            margin: 0 0 30px;
         }
     }
 
@@ -200,21 +186,17 @@
 		display: none !important;
     }
 
-    .main-menu {
-        top: 90px;
-    }
-
     .section {
         &-title {
-            font-size: 27px;
             margin-bottom: 20px;
         }
         &-main {
             &-title {
-                font-size: 30px;
-            }            
-            &-aim, &-text, &-mir {
-                font-size: 18px;
+                font-size: 24px;
+            }      
+            
+            &-content {
+                padding: 0;
             }
         }
 

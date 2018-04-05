@@ -44,29 +44,28 @@
 
 .remodal {
     text-align: left;
+    padding: 30px;
+    background: #fbc8d6;
 
     &-close {
         left: auto;
         right: 0;
+        color: #fff;
+
+        &:before {
+            font-size: 30px;
+        }
     }
 
     &.remodal-small {
-        max-width: 450px;
+        max-width: 350px;
     }
 
-    .form-title {
-        text-align: center;
-        font-size: 18px;
+    .form {
+        padding: 0;
+        background: transparent;
     }
 
-    .input-div, .button {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .button {
-        margin-bottom: 0;
-    }
 }
 
 .hamburger {
