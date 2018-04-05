@@ -10,7 +10,7 @@
     .section {
         &-main {
             &-content {
-                background-position: calc(100% + 200px) top;
+                background-position: calc(100% + 200px) bottom;
             }
         }
     }
@@ -95,7 +95,7 @@
     .section {
         &-main {
             &-content {
-                background-position: calc(100% + 430px) top;
+                background-position: calc(100% + 430px) bottom;
             }
         }
     }
