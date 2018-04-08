@@ -142,6 +142,76 @@ $(document).ready(function() {
     });
 
 
+    $(".carousel-pozvolit").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+          768: { items: 4 },        
+          992: { items: 5 },
+      },
+  });
+
+  $(".carousel-video").owlCarousel({
+      nav: false,
+      dots: false,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1, dots: true },
+         768: { items: 2 }, 
+      },
+   });
+
+   $(".carousel-results").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 10,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1 },
+         768: { items: 2 }, 
+         992: { items: 3 }, 
+      },
+   });
+
+
+   $(".carousel-reviews").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 10,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1 },
+         768: { items: 2 }, 
+         992: { items: 3 }, 
+      },
+   });
+
+   $(".carousel-certificates").owlCarousel({
+      nav: false,
+      dots: false,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1, dots: true },
+         768: { items: 2 }, 
+      },
+   });
+
 });
 
 function validateEmail(email) {

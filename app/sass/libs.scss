@@ -21,6 +21,12 @@
 .owl-carousel {
     padding: 0 50px;
 	.owl {
+      &-item {
+         img {
+            width: auto;
+            margin: 0 auto;
+         }
+      }
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;
