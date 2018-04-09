@@ -83,6 +83,7 @@
          &-form {
             form {
                flex-wrap: wrap;
+               align-items: flex-start;
                .input-div, .button {
                   width: 48%;
                   margin-bottom: 15px;
@@ -178,16 +179,7 @@
               }
            }
         }
-      
-     
-      // &-reviews {
-      //    &-content {
-      //       display: block;
-      //    }
-      //    .review {
-      //       margin: 0 auto 20px;
-      //    }
-      // }
+           
       &-praice {
          &-content {
             display: block;
@@ -247,6 +239,17 @@
                background-image: none;
          }
       }
+
+      &-results {
+         .result {
+            padding: 0;
+            max-width: 286px;
+
+            &-text {
+               padding: 15px 0 0 0;
+            }
+         }
+      }
         
       &-services {
          .service {
@@ -266,8 +269,6 @@
             }
          }
       }
-
-
 
       &-contact {
          .map {
@@ -333,7 +334,15 @@
 
 	.hidden-xxs {
 		display: none !important;
-    }
+   }
+
+   .owl-carousel {
+      padding: 0 20px 0 0;
+   }
+
+   .logo {
+      width: 100px;
+   }
 
    .section {
       &-title {
@@ -341,6 +350,7 @@
          margin-bottom: 20px;
       }
       &-main {
+         padding-top: 90px;
          &-title {
                font-size: 24px;
          }      

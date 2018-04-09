@@ -203,28 +203,28 @@
                   <div class="service-content">
                      <img src="./img/service-1.png" alt="">
                      <h3 class="service-title">Антицеллюлитный <br> массаж тела  </h3>
-                     <button class="button">Подробнее</button>
+                     <button class="button" data-remodal-target="more-modal-1">Подробнее</button>
                   </div>
                </div>
                <div class="service">
                   <div class="service-content">
                      <img src="./img/service-2.png" alt="">
                      <h3 class="service-title">Лимфодренажный <br> массаж тела </h3>
-                     <button class="button">Подробнее</button>
+                     <button class="button" data-remodal-target="more-modal-2">Подробнее</button>
                   </div>
                </div>
                <div class="service">
                   <div class="service-content">
                      <img src="./img/service-3.png" alt="">
                      <h3 class="service-title">Лифтинговый <br> массаж лица </h3>
-                     <button class="button">Подробнее</button>
+                     <button class="button" data-remodal-target="more-modal-3">Подробнее</button>
                   </div>
                </div>
                <div class="service">
                   <div class="service-content">
                      <img src="./img/service-4.png" alt="">
                      <h3 class="service-title">Антицеллюлитное <br> обертывание тела</h3>
-                     <button class="button">Подробнее</button>
+                     <button class="button" data-remodal-target="more-modal-4">Подробнее</button>
                   </div>
                </div>
             </div>
@@ -258,14 +258,14 @@
                Как делается вакуумный массаж
             </h2>
             <div class="carousel-video owl-carousel">
-               <div class="video">
+               <a href="./videos/massaj-1.mp4" class="video" data-fancybox="videoGallery" data-type="iframe">
                   <img src="./img/video-1.jpg" alt="" class="video-img">
                   <img src="./img/triangle.png" alt="" class="video-triangle">
-               </div>
-               <div class="video">
-                  <img src="./img/video-1.jpg" alt="" class="video-img">
+               </a>
+               <a href="./videos/massaj-2.mp4" class="video" data-fancybox="videoGallery" data-type="iframe">
+                  <img src="./img/video-2.jpg" alt="" class="video-img">
                   <img src="./img/triangle.png" alt="" class="video-triangle">
-               </div>
+               </a>
             </div>
          </div>
       </section>
@@ -330,62 +330,7 @@
                         </p>
                      </div>
                   </div>
-               </div>
-               <div class="result">
-                  <div class="border">
-                     <img src="./img/result-1.jpg" alt="">
-                  </div>
-                  <div class="result-text">
-                     <div class="result-target">
-                        <img src="./img/target-icon.png" alt="">
-                        <p><span>Цель:</span> подтянуть силуэт, сократить целлюлит</p>
-                     </div>
-                     <div class="result-resul">
-                        <img src="./img/result-icon.png" alt="">
-                        <p>
-                        <span>Результат:</span> сокращение целлюлита на 60% за 7 процедур
-                     </div>
-                  </p>
-                  </div>
-               </div>
-               <div class="result">
-                  <div class="border">
-                     <img src="./img/result-2.jpg" alt="">
-                  </div>
-                  <div class="result-text">
-                     <div class="result-target">
-                        <img src="./img/target-icon.png" alt="">
-                        <p>
-                        <span>Цель:</span> скорректировать силуэт, сократить целлюлит, уменьшить объем талии
-                        </p>
-                     </div>
-                     <div class="result-resul">
-                        <img src="./img/result-icon.png" alt="">
-                        <p>
-                        <span>Результат:</span> уменьшение объема талии на 8 см, бедер - на 10 см, сокращение целлюлита на 80% за 15 процедур
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="result">
-                  <div class="border">
-                     <img src="./img/result-3.jpg" alt="">
-                  </div>
-                  <div class="result-text">
-                     <div class="result-target">
-                        <img src="./img/target-icon.png" alt="">
-                        <p>
-                        <span>Цель:</span> уменьшить объем талии, сократить жировые отложения, улучшить состояние кожи
-                        </p>
-                     </div>
-                     <div class="result-resul">
-                        <img src="./img/result-icon.png" alt="">
-                        <p>
-                        <span>Результат:</span> уменьшение объема талии на 6 см за 10 процедур
-                        </p>
-                     </div>
-                  </div>
-               </div>               
+               </div>             
             </div>
          </div>
       </section>
@@ -489,13 +434,13 @@
                      </div>
                   </div>
                   
-                  <button class="button">Заказать звонок</button>
+                  <button class="button" data-remodal-target="zvonok-modal">Заказать звонок</button>
                </div>
                <div class="form">
                   <div class="form-title">Приобретите абонемент  "Лицо + тело" 
                         со скидкой в 20% прямо сейчас!</div>
                   <form action="/mail.php" method="post">
-                     <input type="hidden" name="info" value="Подать заявку">
+                     <input type="hidden" name="info" value="Подать заявку на абонемент 'Лицо + тело'">
                      <div class="input-div">
                         <input type="text" class="input" name="Имя" placeholder="Имя">
                      </div>
@@ -508,7 +453,7 @@
                         <span class="error-message">Заполните это поле</span>
                      </div>
 
-                     <button class="button ajax-submit" type="submit" id="podat_zaiavku">Подать заявку</button>
+                     <button class="button ajax-submit" type="submit" id="podat_zaiavku_na_abonement_liso_telo">Подать заявку</button>
                   </form>
 
                   <div class="form-info">* Предложение действует до 31 мая 2018 года</div>
@@ -524,12 +469,12 @@
                Наши сертификаты
             </h2>
             <div class="carousel-certificates owl-carousel">
-               <div class="certificate border">
+               <a href="./img/certificate-large-1.jpg" data-fancybox="certificateGallery" class="certificate border">
                   <img src="./img/certificate-1.jpg" alt="">
-               </div>
-               <div class="certificate border">
-                  <img src="./img/certificate-1.jpg" alt="">
-               </div>
+               </a>
+               <a href="./img/certificate-large-2.jpg" data-fancybox="certificateGallery" class="certificate border">
+                  <img src="./img/certificate-2.jpg" alt="">
+               </a>
             </div>
          </div>
       </section>
@@ -558,7 +503,7 @@
          <div class="container">
             <div class="section-contact-form">
                <form action="/mail.php" method="post">
-                  <input type="hidden" name="info" value="Подать заявку на Разновидности услуг">
+                  <input type="hidden" name="info" value="Получить скидку в 25% на массаж">
                   <div class="input-div">
                      <input type="text" class="input" name="Имя" placeholder="Имя">
                   </div>
@@ -571,7 +516,7 @@
                      <span class="error-message">Заполните это поле</span>
                   </div>
 
-                  <button class="button ajax-submit" type="submit" id="podat_zaiavku_na_raznovidnosti_uslug">Получить скидку в 25% на массаж</button>
+                  <button class="button ajax-submit" type="submit" id="polu4it_skidku_na_massaj">Получить скидку в 25% на массаж</button>
                </form>
                <p class="section-services-form-text">
                   * Ваши данные не будут переданы третьим лицам
@@ -598,7 +543,6 @@
          <img src="./img/rose-contact.png" alt="" class="section-contact-rose">
       </section>
 
-
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-content">
@@ -622,12 +566,11 @@
 					</div>
 				</div>
 			</div>
-		</footer>
-
-		
+      </footer>
+      		
 	</div>
 	
-	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
 		<div class="form">
@@ -653,7 +596,7 @@
 		</div>
 	</div>
 
-	<div class="remodal more" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
+	<div class="remodal more" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
 		<h3 class="more-title">Антицеллюлитный массаж тела</h3>
@@ -699,7 +642,7 @@
 							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
 							<span class="error-message">Заполните это поле</span>
 						</div>
-						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+						<button class="button ajax-submit" type="submit" id="zapisatsia_na_uslugu_antiselliulitnyi_massaj_tela">Записаться</button>
 					</form>
 		
 					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
@@ -708,7 +651,7 @@
 		</div>		
 	</div>
 			
-	<div class="remodal more" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+	<div class="remodal more" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
 		<h3 class="more-title">Лимфодренажный массаж тела</h3>
@@ -753,7 +696,7 @@
 							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
 							<span class="error-message">Заполните это поле</span>
 						</div>
-						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+						<button class="button ajax-submit" type="submit" id="zapisatsia_na_uslugu_limfondrenajnyi_massaj_tela">Записаться</button>
 					</form>
 		
 					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
@@ -762,7 +705,7 @@
 		</div>		
 	</div>
 
-	<div class="remodal more" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
+	<div class="remodal more" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
 		<h3 class="more-title">Лифтинговый массаж лица</h3>
@@ -804,7 +747,7 @@
 							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
 							<span class="error-message">Заполните это поле</span>
 						</div>
-						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+						<button class="button ajax-submit" type="submit" id="zapisatsia_na_uslugu_liftingovyi_massaj_lisa">Записаться</button>
 					</form>
 		
 					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>
@@ -813,10 +756,10 @@
 		</div>		
 	</div>
 
-	<div class="remodal more" data-remodal-id="more-modal-4" data-remodal-options="hashTracking: true">
+	<div class="remodal more" data-remodal-id="more-modal-4" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
-		<h3 class="more-title">Атицеллюлитное обертывание тела</h3>
+		<h3 class="more-title">Антицеллюлитное обертывание тела</h3>
 
 		<div class="more-content">
 			<div class="more-left">
@@ -835,7 +778,7 @@
 
 				<div class="form">
 					<form action="/mail.php">
-						<input type="hidden" name="info" value="Записаться на 'Атицеллюлитное обертывание тела'">
+						<input type="hidden" name="info" value="Записаться на 'Антицеллюлитное обертывание тела'">
 						<div class="input-div">
 							<input type="text" class="input" name="Имя" placeholder="Имя">
 						</div>
@@ -847,7 +790,7 @@
 							<input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
 							<span class="error-message">Заполните это поле</span>
 						</div>
-						<button class="button ajax-submit" type="submit" id="modal_zapisatsia">Записаться</button>
+						<button class="button ajax-submit" type="submit" id="zapisatsia_na_uslugu_antiselliulitnoe_obertyvanie">Записаться</button>
 					</form>
 		
 					<div class="form-info2">* Ваши данные не будут переданы третьим лицам</div>

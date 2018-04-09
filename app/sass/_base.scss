@@ -71,7 +71,7 @@ p {
 .button {
     display: inline-block;
     text-decoration: none;
-	padding: 5px 20px;
+	padding: 6.5px 20px;
     font-size: 12px;
     font-weight: normal;
     text-align: center;
@@ -119,9 +119,9 @@ p {
         }
 
         & .error-message {
-            position: absolute;
-            top: calc(100% + 5px);
-            left: 0;
+            // position: absolute;
+            // top: 100%;
+            // left: 0;
         }
 
         .inverse & {

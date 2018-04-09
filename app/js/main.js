@@ -15,9 +15,12 @@ $(document).ready(function() {
         utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
     }
 
-    if($wnd.width() < 992) {
-       headerHeight = 126;
-    }
+   if($wnd.width() < 480) {
+      headerHeight = 48 + 1;
+   }
+   else if($wnd.width() < 992) {
+      headerHeight = 126 + 1;
+   }
 
     $wnd.scroll(function() { onscroll(); });
 
@@ -34,7 +37,7 @@ $(document).ready(function() {
             $header.removeClass('scrolled');
         }
 
-        var scrollPos = $wnd.scrollTop() + headerHeight;
+        var scrollPos = $wnd.scrollTop();
 
         $menu.find(".link").each(function() {
             var link = $(this);
@@ -42,7 +45,7 @@ $(document).ready(function() {
             
             if(id.length > 1 && id.charAt(0) == '#' && $(id).length > 0) {
                 var section = $(id);
-                var sectionTop = section.offset().top;
+                var sectionTop = section.offset().top - headerHeight;
 
                 if(sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
                     link.addClass('active');
@@ -154,7 +157,7 @@ $(document).ready(function() {
       margin: 30,
       navText: ['', ''],
       responsive: {
-          0: { items: 1 },
+          0: { items: 1, mouseDrag: false },
           480: { items: 2 },
           768: { items: 4 },        
           992: { items: 5 },
@@ -169,7 +172,7 @@ $(document).ready(function() {
       margin: 30,
       navText: ['', ''],
       responsive: {
-         0: { items: 1, dots: true },
+         0: { items: 1, dots: true, mouseDrag: false },
          768: { items: 2 }, 
       },
    });
@@ -182,7 +185,7 @@ $(document).ready(function() {
       margin: 10,
       navText: ['', ''],
       responsive: {
-         0: { items: 1 },
+         0: { items: 1, mouseDrag: false },
          768: { items: 2 }, 
          992: { items: 3 }, 
       },
@@ -197,7 +200,7 @@ $(document).ready(function() {
       margin: 10,
       navText: ['', ''],
       responsive: {
-         0: { items: 1 },
+         0: { items: 1, mouseDrag: false },
          768: { items: 2 }, 
          992: { items: 3 }, 
       },
@@ -211,7 +214,7 @@ $(document).ready(function() {
       margin: 30,
       navText: ['', ''],
       responsive: {
-         0: { items: 1, dots: true },
+         0: { items: 1, dots: true, mouseDrag: false },
          768: { items: 2 }, 
       },
    });
