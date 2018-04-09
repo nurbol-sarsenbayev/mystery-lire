@@ -392,19 +392,11 @@ body {
          }
       }
 
-      // .owl-carousel {
-      //    .owl-dots {
-      //       top: 40px;
-      //       bottom: auto;
-      //       padding-top: 10px;
-      //       min-height: 100px;
-      //       justify-content: flex-start;
-      //       &:before {
-      //          top: 0;
-      //          bottom: 0;
-      //       }
-      //    }
-      // }
+      .owl-carousel {
+         .owl-dots {
+            top: 40px;
+         }
+      }
       
    }
 
