@@ -6,13 +6,17 @@ $(document).ready(function() {
     var $header = $(".header");
     var $menu = $(".main-menu");
     var utms = parseGET();
-    var headerHeight = 105;
+    var headerHeight = 138;
     var $hamburger = $(".hamburger");
 
     if(utms && Object.keys(utms).length > 0) {
         window.sessionStorage.setItem('utms', JSON.stringify(utms));
     } else {
         utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
+    }
+
+    if($wnd.width() < 992) {
+       headerHeight = 126;
     }
 
     $wnd.scroll(function() { onscroll(); });
