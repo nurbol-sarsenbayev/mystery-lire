@@ -19,6 +19,7 @@
 }
 
 .owl-carousel {
+   position: relative;
     padding: 0 50px;
 	.owl {
       &-item {
@@ -44,7 +45,39 @@
 
 		&-next {
 			right: 0px;
-		}
+      }
+      
+      &-dots {
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: auto;  
+         padding-top: 10px;   
+         min-height: 100px;    
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         &:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            bottom: 0px;
+            border-left: 1px solid $accent;
+         }
+      }
+
+      &-dot {
+         position: relative;
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         background: lighten($accent, 10%) !important;
+         margin: 2px 0;
+         &.active {
+            background: $accent !important;
+         }
+      }
 	}
 }
 

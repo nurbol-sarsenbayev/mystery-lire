@@ -391,6 +391,21 @@ body {
             }
          }
       }
+
+      // .owl-carousel {
+      //    .owl-dots {
+      //       top: 40px;
+      //       bottom: auto;
+      //       padding-top: 10px;
+      //       min-height: 100px;
+      //       justify-content: flex-start;
+      //       &:before {
+      //          top: 0;
+      //          bottom: 0;
+      //       }
+      //    }
+      // }
+      
    }
 
    &-reviews {
@@ -398,6 +413,7 @@ body {
      
       .review {
          max-width: 260px;
+         margin: 0 auto;
          .review-img {
             margin-bottom: 20px;
          }
@@ -420,7 +436,7 @@ body {
             align-items: flex-start;
             position: relative;
             .target-icon  {
-               margin-right: 10px;
+               margin: 0 10px 0 0;
             }
             
          }
@@ -428,7 +444,7 @@ body {
             align-self: flex-end;
          }
          &-quote1 {
-            margin-right: 10px;
+            margin-right: 10px !important;
          }
       }
    }
