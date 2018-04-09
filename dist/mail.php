@@ -2,9 +2,9 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "Evodream Holding";
-$admin_email  = "info@evodreamholding.com, client@marketing-time.kz";
-$server_mail = "<info@evodreamholding.com>";
+$project_name = "Mystery Line";
+$admin_email  = "info@mysteryline.kz, client@marketing-time.kz";
+$server_mail = "<info@mysteryline.kz>";
 $form_subject = "Заявка";
 
 
