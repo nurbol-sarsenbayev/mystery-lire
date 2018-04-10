@@ -158,7 +158,7 @@ $(document).ready(function() {
       navText: ['', ''],
       responsive: {
           0: { items: 1, mouseDrag: false },
-          480: { items: 2 },
+          480: { items: 2, mouseDrag: true },
           768: { items: 4 },        
           992: { items: 5 },
       },
@@ -173,7 +173,7 @@ $(document).ready(function() {
       navText: ['', ''],
       responsive: {
          0: { items: 1, dots: true, mouseDrag: false },
-         768: { items: 2 }, 
+         768: { items: 2, mouseDrag: true }, 
       },
    });
 
@@ -186,7 +186,7 @@ $(document).ready(function() {
       navText: ['', ''],
       responsive: {
          0: { items: 1, mouseDrag: false },
-         768: { items: 2 }, 
+         768: { items: 2, mouseDrag: true }, 
          992: { items: 3 }, 
       },
    });
@@ -201,7 +201,7 @@ $(document).ready(function() {
       navText: ['', ''],
       responsive: {
          0: { items: 1, mouseDrag: false },
-         768: { items: 2 }, 
+         768: { items: 2, mouseDrag: true }, 
          992: { items: 3 }, 
       },
    });
@@ -215,7 +215,7 @@ $(document).ready(function() {
       navText: ['', ''],
       responsive: {
          0: { items: 1, dots: true, mouseDrag: false },
-         768: { items: 2 }, 
+         768: { items: 2, mouseDrag: true }, 
       },
    });
 

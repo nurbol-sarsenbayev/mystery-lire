@@ -2,6 +2,13 @@
 <html lang="ru">
 
 <head>
+   <!-- Google Tag Manager -->
+   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+   })(window,document,'script','dataLayer','GTM-N752MV7');</script>
+   <!-- End Google Tag Manager -->
 
 	<meta charset="utf-8">
 
@@ -20,6 +27,10 @@
 </head>
 
 <body>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N752MV7"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
 
     <div class="page-wrapper">
 
@@ -62,7 +73,7 @@
 					<div class="container">
 						<ul>
 							<li><a class="link" href="#main">Главная</a></li>
-							<li><a class="link" href="#pozvolit">Услуги</a></li>
+							<li><a class="link" href="#services">Услуги</a></li>
 							<li><a class="link" href="#video">Видео</a></li>
 							<li><a class="link" href="#results">Результаты</a></li>
 							<li class="seperator"></li>
@@ -125,7 +136,7 @@
          </div>
       </section>
       
-      <section class="section section-pozvolit" id="pozvolit">
+      <section class="section section-pozvolit">
          <div class="container">
             <h2 class="section-title">
                Вакуумный массаж позволит
@@ -193,38 +204,38 @@
          <img src="./img/rose.png" alt="" class="section-pozvolit-rose">
       </section>
 
-      <section class="section section-services">
+      <section class="section section-services" id="services">
          <div class="container">
             <h2 class="section-title">
                Разновидности услуг
             </h2>
             <div class="section-services-content">
                <div class="service">
-                  <div class="service-content">
+                  <div class="service-content" data-remodal-target="more-modal-1">
                      <img src="./img/service-1.png" alt="">
                      <h3 class="service-title">Антицеллюлитный <br> массаж тела  </h3>
-                     <button class="button" data-remodal-target="more-modal-1">Подробнее</button>
+                     <button class="button">Подробнее</button>
                   </div>
                </div>
                <div class="service">
-                  <div class="service-content">
+                  <div class="service-content" data-remodal-target="more-modal-2">
                      <img src="./img/service-2.png" alt="">
                      <h3 class="service-title">Лимфодренажный <br> массаж тела </h3>
-                     <button class="button" data-remodal-target="more-modal-2">Подробнее</button>
+                     <button class="button">Подробнее</button>
                   </div>
                </div>
                <div class="service">
-                  <div class="service-content">
+                  <div class="service-content" data-remodal-target="more-modal-3">
                      <img src="./img/service-3.png" alt="">
                      <h3 class="service-title">Лифтинговый <br> массаж лица </h3>
-                     <button class="button" data-remodal-target="more-modal-3">Подробнее</button>
+                     <button class="button">Подробнее</button>
                   </div>
                </div>
                <div class="service">
-                  <div class="service-content">
+                  <div class="service-content" data-remodal-target="more-modal-4">
                      <img src="./img/service-4.png" alt="">
                      <h3 class="service-title">Антицеллюлитное <br> обертывание тела</h3>
-                     <button class="button" data-remodal-target="more-modal-4">Подробнее</button>
+                     <button class="button">Подробнее</button>
                   </div>
                </div>
             </div>
@@ -469,12 +480,12 @@
                Наши сертификаты
             </h2>
             <div class="carousel-certificates owl-carousel">
-               <a href="./img/certificate-large-1.jpg" data-fancybox="certificateGallery" class="certificate border">
+               <div class="certificate border">
                   <img src="./img/certificate-1.jpg" alt="">
-               </a>
-               <a href="./img/certificate-large-2.jpg" data-fancybox="certificateGallery" class="certificate border">
+               </div>
+               <div class="certificate border">
                   <img src="./img/certificate-2.jpg" alt="">
-               </a>
+               </div>
             </div>
          </div>
       </section>
@@ -501,6 +512,7 @@
 
       <section class="section section-contact" id="contact">
          <div class="container">
+            <h2 class="section-title">Подайте заявку и получите скидку в 25% на массаж</h2>
             <div class="section-contact-form">
                <form action="/mail.php" method="post">
                   <input type="hidden" name="info" value="Получить скидку в 25% на массаж">
@@ -516,12 +528,13 @@
                      <span class="error-message">Заполните это поле</span>
                   </div>
 
-                  <button class="button ajax-submit" type="submit" id="polu4it_skidku_na_massaj">Получить скидку в 25% на массаж</button>
+                  <button class="button ajax-submit" type="submit" id="polu4it_skidku_na_massaj">Подать заявку</button>
                </form>
                <p class="section-services-form-text">
                   * Ваши данные не будут переданы третьим лицам
                </p>
             </div>
+            <h2 class="section-title">Контакты</h2>
             <div class="section-contact-content">
                <div class="map border">
                   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A663e78817692c648279943ca27432cd99406cd631bf73604a6a073cb5cc466b8&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>

@@ -10,7 +10,7 @@
     .section {
         &-main {
             &-content {
-                background-position: calc(100% + 200px) bottom;
+                background-position: calc(100% + 200px) top;
             }
         }
 
@@ -60,41 +60,6 @@
         &-slogan {
             display: none;
         }        
-    }
-
-    .section {
-      
-      &-pozvolit {
-         &-rose {
-            display: none;
-         }
-      }
-
-      &-contact {
-         &-rose {
-            display: none;
-         }
-         &-content {
-            display: block;
-            .map {
-               margin: 0 auto;
-            }
-         }
-         &-form {
-            form {
-               flex-wrap: wrap;
-               align-items: flex-start;
-               .input-div, .button {
-                  width: 48%;
-                  margin-bottom: 15px;
-               }
-            }
-         }
-         
-      }
-      
-      
-
     }
 
     .footer {
@@ -160,9 +125,39 @@
     .section {
         &-main {
             &-content {
-                background-position: calc(100% + 430px) bottom;
+                background-position: calc(100% + 430px) top;
             }
         }
+
+        &-pozvolit {
+         &-rose {
+            display: none;
+         }
+      }
+
+      &-contact {
+         &-rose {
+            display: none;
+         }
+         &-content {
+            display: block;
+            .map {
+               margin: 0 auto;
+            }
+         }
+         &-form {
+            form {
+               flex-wrap: wrap;
+               align-items: flex-start;
+               .input-div, .button {
+                  width: 48%;
+                  margin-bottom: 15px;
+               }
+            }
+         }
+         
+      }
+
         &-services {
            &-content {
               flex-wrap: wrap;
@@ -220,12 +215,28 @@
           display: none;
        }
     }
+
+   .owl-carousel {
+      .owl {
+         &-dots {
+            margin-top: 20px;
+            position: static;
+            min-height: auto;
+            flex-direction: row;
+            justify-content: center;
+
+            &:before {
+               display: none;
+            }
+         }
+
+         &-dot {
+            margin: 0 2px;
+         }
+      }
+   } 
     
    .section {
-      &-title {
-         font-size: 35px;
-      }
-
       &-main {
          padding-top: 160px;
 
@@ -237,6 +248,10 @@
                flex-direction: column;
                align-items: center;
                background-image: none;
+         }
+
+         .form {
+            margin-top: 0;
          }
       }
 
@@ -301,8 +316,6 @@
 
 }
 
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
     .form {
@@ -346,7 +359,6 @@
 
    .section {
       &-title {
-         font-size: 28px;
          margin-bottom: 20px;
       }
       &-main {

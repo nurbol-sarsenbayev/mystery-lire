@@ -245,17 +245,19 @@ body {
 
         &-content {
             background-repeat: no-repeat;
-            background-position: right bottom;
+            background-position: right top;
             background-image: url('../img/main-back.jpg');
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             padding: 50px 60px 40px 30px;
+            min-height: 390px;
         }
 
         &-list {
             text-align: left;
             font-size: 16px;
+            font-weight: 500;
             list-style: none;
             padding: 0;
             max-width: 400px;
@@ -276,6 +278,10 @@ body {
                 }
             }
         }
+
+        .form {
+           margin-top: -20px;
+        }
     }
 
 
@@ -293,6 +299,7 @@ body {
       }
 
       .pozvolit {
+         font-weight: 500;
          img {
             height: 100px;
             margin-bottom: 15px;
@@ -307,11 +314,12 @@ body {
          justify-content: space-between;
          
       }
-      .service {
+      .service {         
          width: 25%;
          margin-bottom: 30px;
 
          &-content {
+            cursor: pointer;
             max-width: 262px;
             display: flex;
             flex-direction: column;
@@ -395,6 +403,7 @@ body {
             align-items: flex-start;
             img {
                margin-right: 10px;
+               flex-shrink: 0;
             }
             span {
                font-weight: bold;
@@ -440,6 +449,10 @@ body {
             .target-icon  {
                margin: 0 10px 0 0;
             }
+
+            img {
+               flex-shrink: 0;
+            }
             
          }
          &-quote {
@@ -475,6 +488,7 @@ body {
                justify-content: space-between;
                .price-text {
                   text-align: left;
+                  font-weight: 500;
                }
                .price {
                   margin-right: 70px;
@@ -490,6 +504,7 @@ body {
       }
       .form {
          width: 39%;
+         max-width: 370px;
          &-title {
             text-align: left;
          }
@@ -549,7 +564,7 @@ body {
             flex-shrink: 0;
             width: 556px;
 
-            ymaps {
+            & > ymaps {
                display: block;
             }
          }
