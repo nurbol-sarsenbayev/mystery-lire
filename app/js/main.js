@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function() {
 
     var $wnd = $(window);

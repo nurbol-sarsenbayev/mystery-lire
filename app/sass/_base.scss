@@ -69,9 +69,10 @@ p {
 }
 
 .button {
+   position: relative;
     display: inline-block;
     text-decoration: none;
-	padding: 6.5px 20px;
+	 padding: 6.5px 20px;
     font-size: 12px;
     font-weight: normal;
     text-align: center;
@@ -83,8 +84,24 @@ p {
     cursor: pointer;
 
     &:hover {
-        color: $text_color !important;
-    }    
+       background-color: #faa9bf;
+    }
+
+    &:active {
+       top: 1px;
+    }
+
+    &.inverse {
+       border: 1px solid $accent_light;
+       background-color: $accent_light;
+
+       &:hover {
+          background-color: #fff;
+          color: $accent !important;
+       }
+    }
+    
+    
 }
 
 .input, .textarea {

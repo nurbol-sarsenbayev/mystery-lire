@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@fancyapps/fancybox": "^3.2.5",
+    "animate.css": "^3.6.1",
     "bootstrap-grid": "^3.0.1",
     "font-awesome": "^4.7.0",
     "hamburgers": "^0.9.3",
@@ -17,7 +18,8 @@
     "jquery.maskedinput": "^1.4.1",
     "owl.carousel": "^2.3.2",
     "remodal": "^1.1.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
