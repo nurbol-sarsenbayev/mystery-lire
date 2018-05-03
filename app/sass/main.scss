@@ -347,8 +347,13 @@ body {
       &-form {
          max-width: 810px;
          margin: 0 auto;
+         &-title {
+           font-size: 17px;
+           margin-bottom: 20px;
+         }
          &-text {
             text-align: left;
+            margin: 0;
          }
          form {
             display: flex;
@@ -363,15 +368,6 @@ body {
       .video {
          display: inline-block;
          position: relative;
-        //  &:before {
-        //     content: "";
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     background-color: rgba($accent, 0.5);
-        //  }
          &-img {
             display: block;
          }
@@ -461,57 +457,6 @@ body {
          }
          &-quote1 {
             margin-right: 10px !important;
-         }
-      }
-   }
-
-   &-praice {
-      background-image: url('../img/prais-list.jpg');
-      &-content {
-         display: flex;
-         justify-content: space-between;
-      }
-      .praice-content {
-         width: 60%;
-         &-title {
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
-            color: $accent;
-            p {
-               margin-bottom: 30px;
-            }
-         }
-         &-text {
-            margin-bottom: 10px;
-            .text {
-               display: flex;
-               justify-content: space-between;
-               .price-text {
-                  text-align: left;
-                  font-weight: 500;
-               }
-               .price {
-                  margin-right: 70px;
-                  color: $accent;
-                  font-size: 16px;
-               }
-            }
-         }
-         .button {
-            display: block;
-            margin: 0 0 0 auto;
-         }
-      }
-      .form {
-         width: 39%;
-         max-width: 370px;
-         &-title {
-            text-align: left;
-         }
-         &-info, &-info2 {
-            text-align-last: left;
-            font-size: 12px;
          }
       }
    }

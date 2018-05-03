@@ -175,29 +175,6 @@
            }
         }
            
-      &-praice {
-         &-content {
-            display: block;
-         }
-         .praice-content {
-            width: 100%;
-            margin-bottom: 30px;
-            &-text {
-               .text {
-                  .price-text {
-                     width: 60%;
-                  }
-                  .price {
-                     margin-right: 20px;
-                  }
-               }
-            }
-         }
-         .form {
-            width: 70%;
-            margin: 0 auto;
-         }
-      }
     }
 }
 
@@ -383,11 +360,6 @@
             }
          }
       }
-      &-praice {
-         .form {
-            width: 100%;
-         }
-      } 
 
       &-contact {
          &-form {
