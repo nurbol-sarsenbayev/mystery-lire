@@ -79,7 +79,6 @@
 							<li><a class="link" href="#results">Результаты</a></li>
 							<li class="seperator"></li>
 							<li><a class="link" href="#reviews">Отзывы</a></li>							
-							<li><a class="link" href="#praice">Прайс-лист</a></li>							
 							<li><a class="link" href="#certificates">Сертификаты</a></li>							
 							<li><a class="link" href="#contact">Контакты</a></li>							
 							<li class="visible-xxs"><a href="tel:+77778011161" class="text-phone">+7 (777) 801-11-61</a></li>
@@ -238,8 +237,10 @@
                </div>
             </div>
             <div class="section-services-form">
+              <div class="section-services-form-title">Приобретите абонемент  "Лицо + тело" 
+                  со скидкой в 20% прямо сейчас!</div>
                <form action="/mail.php" method="post">
-                  <input type="hidden" name="info" value="Подать заявку на Разновидности услуг">
+                  <input type="hidden" name="info" value="Подать заявку на абонемент 'Лицо + тело'">
                   <div class="input-div">
                      <input type="text" class="input" name="Имя" placeholder="Имя">
                   </div>
@@ -252,9 +253,12 @@
                      <span class="error-message">Заполните это поле</span>
                   </div>
 
-                  <button class="button ajax-submit" type="submit" id="podat_zaiavku_na_raznovidnosti_uslug">Подать заявку</button>
+                  <button class="button ajax-submit" type="submit" id="podat_zaiavku_na_abonement_liso_telo">Подать заявку</button>
                </form>
-               <p class="section-services-form-text">
+              <p class="section-services-form-text">
+                  * Предложение действует до 31 мая 2018 года
+               </p> 
+              <p class="section-services-form-text">
                   * Ваши данные не будут переданы третьим лицам
                </p>
             </div>
@@ -409,65 +413,6 @@
                    </div>
                 </div>
              </div>
-            </div>
-         </div>
-      </section>
-
-      <section class="section section-praice" id="praice">
-         <div class="container">
-            <h2 class="section-title">
-               Прайс-лист
-            </h2>
-            <div class="section-praice-content">
-               <div class="praice-content">
-                  <div class="praice-content-title">
-                     <p class="vid">Вид услуги</p>
-                     <p class="prosedura">Стоимость за 1 процедуру</p>
-                  </div>
-                  <div class="praice-content-text">
-                     <div class="text">
-                        <p class="price-text">Антицеллюлитный массаж тела (курс – 10-15 процедур) </p>
-                        <p class="price">3 500 тг.</p>
-                     </div>
-                     <div class="text">
-                        <p class="price-text">Лимфодренажный массаж всего тела (курс – 10-15 процедур) </p>
-                        <p class="price">5 000 тг.</p>
-                     </div>
-                     <div class="text">
-                        <p class="price-text">Лифтинговый массаж лица (курс – 4 процедуры) </p>
-                        <p class="price">4 000 тг.</p>
-                     </div>
-                     <div class="text">
-                        <p class="price-text">Антицеллюлитное обертывание тела </p>
-                        <p class="price">3 000 тг.</p>
-                     </div>
-                  </div>
-                  
-                  <button class="button" data-remodal-target="zvonok-modal">Заказать звонок</button>
-               </div>
-               <div class="form">
-                  <div class="form-title">Приобретите абонемент  "Лицо + тело" 
-                        со скидкой в 20% прямо сейчас!</div>
-                  <form action="/mail.php" method="post">
-                     <input type="hidden" name="info" value="Подать заявку на абонемент 'Лицо + тело'">
-                     <div class="input-div">
-                        <input type="text" class="input" name="Имя" placeholder="Имя">
-                     </div>
-                     <div class="input-div">
-                        <input type="email" class="input" name="email" placeholder="E-mail*" required>
-                        <span class="error-message">Заполните это поле</span>
-                     </div>
-                     <div class="input-div">
-                        <input type="tel" class="input" name="Телефон" placeholder="Телефон*" required>
-                        <span class="error-message">Заполните это поле</span>
-                     </div>
-
-                     <button class="button ajax-submit" type="submit" id="podat_zaiavku_na_abonement_liso_telo">Подать заявку</button>
-                  </form>
-
-                  <div class="form-info">* Предложение действует до 31 мая 2018 года</div>
-                  <div class="form-info2">** Ваши данные не будут переданы третьим лицам</div>
-               </div>
             </div>
          </div>
       </section>
